@@ -1,2 +1,13 @@
+# Vagrant
 .vagrant/
+
+# PyCharm
 flask_ml/.idea/
+
+#Vim
+*.swo
+*.swp
+
+#Python
+*.pyo
+*.pyc
