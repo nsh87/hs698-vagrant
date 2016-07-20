@@ -94,5 +94,13 @@ def sub_install_python_requirements():
     install = 'pip install -r /vagrant/flask_ml/requirements.txt'
     # Join and execute the commands
     run(activate + '; ' + install)
-    
-    
+
+
+def dev_server():
+    """Run the Flask development server on the VM."""
+    # Activate the virtualenv
+    activate = 'source {0}/{1}/bin/activate'.format(
+        env.virtualenv['dir'], env.virtualenv['name'])
+    # Run the file run_api.py to start the Flask app
+    dev_server = 'python /vagrant/flask_ml/run_api.py'
+    run(activate + '; ' + dev_server)
