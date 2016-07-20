@@ -11,3 +11,6 @@ flask_ml/.idea/
 #Python
 *.pyo
 *.pyc
+
+# Flask app
+flask_ml/api/static/tmp/*
